@@ -38,9 +38,15 @@ Option 1 (recommended): prebuilt binary via npm (macOS, Linux, Windows)
 npm install -g @dvcrn/gemini-code-assist-oauth-proxy
 ```
 
-Option 2: install from source with Go
+Option 2: install with mise
 
+```bash
+mise use -g go:github.com/dvcrn/gemini-code-assist-oauth-proxy/cmd/gemini-code-assist-oauth-proxy@latest
 ```
+
+Option 3: install from source with Go
+
+```bash
 go install github.com/dvcrn/gemini-code-assist-oauth-proxy/cmd/gemini-code-assist-oauth-proxy@latest
 ```
 
