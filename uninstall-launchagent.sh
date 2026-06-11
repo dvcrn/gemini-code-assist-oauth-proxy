@@ -1,14 +1,14 @@
 #!/bin/bash
 
 PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
-PLIST_NAME="com.gemini-proxy.plist"
+PLIST_NAME="sh.d.gemini-code-assist-oauth-proxy.plist"
 PLIST_LOCAL="${PROJECT_DIR}/${PLIST_NAME}"
 PLIST_SYMLINK="${HOME}/Library/LaunchAgents/${PLIST_NAME}"
 
-echo "Uninstalling gemini-proxy LaunchAgent..."
+echo "Uninstalling gemini-code-assist-oauth-proxy LaunchAgent..."
 
 # Check if the service is running and unload it
-if launchctl list | grep -q "com.gemini-proxy"; then
+if launchctl list | grep -q "sh.d.gemini-code-assist-oauth-proxy"; then
     echo "Stopping service..."
     launchctl unload "${PLIST_SYMLINK}" 2>/dev/null || true
     echo "Service stopped"
