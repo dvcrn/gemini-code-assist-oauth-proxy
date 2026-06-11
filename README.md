@@ -1,7 +1,7 @@
 # Gemini Code Assist OAuth Proxy
 
 > [!WARNING]
-> Google has deprecated Gemini Code Assist in favor of [Antigravity](https://antigravity.google/). If you're looking for a proxy for Antigravity, check out [antigravity-proxy](https://github.com/dvcrn/antigravity-proxy).
+> Google has deprecated Gemini Code Assist in favor of [Antigravity](https://antigravity.google/). If you're looking for a proxy for Antigravity, check out [antigravity-oauth-proxy](https://github.com/dvcrn/antigravity-oauth-proxy).
 
 Transparently proxy to expose the Gemini Code Assist API through standard APIs that you can plug into different tools such as OpenCode or Xcode
 
