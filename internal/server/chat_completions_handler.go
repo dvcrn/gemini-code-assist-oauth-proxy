@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/openai"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/transform"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/openai"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/transform"
 )
 
 // openAIChatCompletionsHandler handles OpenAI-compatible chat completion requests.

@@ -8,8 +8,8 @@ node_modules
 *.har
 *.proxymanlogv2
 build/
-com.gemini-proxy.plist
-/gemini-code-assist-proxy
-npm/gemini-code-assist-proxy
-npm/gemini-code-assist-proxy.exe
+sh.d.gemini-code-assist-oauth-proxy.plist
+/gemini-code-assist-oauth-proxy
+npm/gemini-code-assist-oauth-proxy
+npm/gemini-code-assist-oauth-proxy.exe
 .gocache

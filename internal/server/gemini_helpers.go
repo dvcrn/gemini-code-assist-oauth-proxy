@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/env"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/gemini"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/env"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/gemini"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 )
 
 var geminiPathRegex = regexp.MustCompile(`v1(?:beta)?/models/([^/:]+):(.+)`)
