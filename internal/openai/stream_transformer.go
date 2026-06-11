@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 	"github.com/google/uuid"
 )
 

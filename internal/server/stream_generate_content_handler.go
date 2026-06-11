@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/gemini"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/gemini"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 )
 
 func (s *Server) streamGenerateContentHandler(w http.ResponseWriter, r *http.Request) {

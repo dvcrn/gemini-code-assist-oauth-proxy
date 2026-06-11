@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/env"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/env"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 )
 
 // FileProvider implements CredentialsProvider using file-based storage

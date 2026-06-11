@@ -9,9 +9,9 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/credentials"
-	serverhttp "github.com/dvcrn/gemini-code-assist-proxy/internal/http"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/credentials"
+	serverhttp "github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/http"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 )
 
 // Client is a client for the Gemini API.

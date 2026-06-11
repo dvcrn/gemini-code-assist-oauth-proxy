@@ -9,7 +9,7 @@ node_modules
 *.proxymanlogv2
 build/
 com.gemini-proxy.plist
-/gemini-code-assist-proxy
-npm/gemini-code-assist-proxy
-npm/gemini-code-assist-proxy.exe
+/gemini-code-assist-oauth-proxy
+npm/gemini-code-assist-oauth-proxy
+npm/gemini-code-assist-oauth-proxy.exe
 .gocache

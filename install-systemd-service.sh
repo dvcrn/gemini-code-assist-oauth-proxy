@@ -8,7 +8,7 @@ if [[ "$(uname -s)" != "Linux" ]]; then
 fi
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SERVICE_NAME="gemini-code-assist-proxy"
+SERVICE_NAME="gemini-code-assist-oauth-proxy"
 SERVICE_FILE_LOCAL="${PROJECT_DIR}/${SERVICE_NAME}.service"
 SERVICE_FILE_SYSTEM="/etc/systemd/system/${SERVICE_NAME}.service"
 
@@ -31,7 +31,7 @@ echo "Generating systemd unit at ${SERVICE_FILE_LOCAL} (and will install to ${SE
 
 cat > "${SERVICE_FILE_LOCAL}" <<EOF
 [Unit]
-Description=Gemini Code Assist Proxy
+Description=Gemini Code Assist OAuth Proxy
 After=network-online.target
 Wants=network-online.target
 
@@ -41,7 +41,7 @@ WorkingDirectory=${PROJECT_DIR}
 Environment=HOME=${HOME}
 Environment=PORT=${PORT}
 Environment=ADMIN_API_KEY=${ADMIN_API_KEY}
-ExecStart=${PROJECT_DIR}/gemini-code-assist-proxy
+ExecStart=${PROJECT_DIR}/gemini-code-assist-oauth-proxy
 Restart=on-failure
 RestartSec=5
 

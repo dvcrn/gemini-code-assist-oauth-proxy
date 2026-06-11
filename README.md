@@ -1,4 +1,7 @@
-# Gemini Code Assist Proxy
+# Gemini Code Assist OAuth Proxy
+
+> [!WARNING]
+> Google has deprecated Gemini Code Assist in favor of [Antigravity](https://antigravity.google/). If you're looking for a proxy for Antigravity, check out [antigravity-proxy](https://github.com/dvcrn/antigravity-proxy).
 
 Transparently proxy to expose the Gemini Code Assist API through standard APIs that you can plug into different tools such as OpenCode or Xcode
 
@@ -32,19 +35,19 @@ To run locally, or to deploy to Cloudflare Workers
 Option 1 (recommended): prebuilt binary via npm (macOS, Linux, Windows)
 
 ```bash
-npm install -g @dvcrn/gemini-code-assist-proxy
+npm install -g @dvcrn/gemini-code-assist-oauth-proxy
 ```
 
 Option 2: install from source with Go
 
 ```
-go install github.com/dvcrn/gemini-code-assist-proxy/cmd/gemini-code-assist-proxy@latest
+go install github.com/dvcrn/gemini-code-assist-oauth-proxy/cmd/gemini-code-assist-oauth-proxy@latest
 ```
 
 Then to start:
 
 ```
-ADMIN_API_KEY=123abc gemini-code-assist-proxy
+ADMIN_API_KEY=123abc gemini-code-assist-oauth-proxy
 ```
 
 ## Auth
@@ -135,14 +138,14 @@ For production deployment on Cloudflare Workers:
 1. **Create KV namespace** (required for credential storage):
 
    ```bash
-   wrangler kv namespace create "gemini-code-assist-proxy-kv"
+   wrangler kv namespace create "gemini-code-assist-oauth-proxy-kv"
    ```
 
    This will output a namespace ID. Add it to your `wrangler.toml`:
 
    ```toml
    kv_namespaces = [
-     { binding = "gemini_code_assist_proxy_kv", id = "YOUR_NAMESPACE_ID_HERE" }
+     { binding = "gemini_code_assist_oauth_proxy_kv", id = "YOUR_NAMESPACE_ID_HERE" }
    ]
    ```
 

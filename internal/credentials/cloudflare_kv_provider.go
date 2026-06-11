@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 
 	"github.com/syumai/workers/cloudflare/fetch"
 	"github.com/syumai/workers/cloudflare/kv"
@@ -28,7 +28,7 @@ type CloudflareKVProvider struct {
 func NewCloudflareKVProvider() (*CloudflareKVProvider, error) {
 	// In Cloudflare Workers, KV namespaces are accessed via bindings
 	// The binding name is configured in wrangler.toml
-	kvStore, err := kv.NewNamespace("gemini_code_assist_proxy_kv")
+	kvStore, err := kv.NewNamespace("gemini_code_assist_oauth_proxy_kv")
 	if err != nil {
 		return nil, fmt.Errorf("failed to initialize KV namespace: %w", err)
 	}
