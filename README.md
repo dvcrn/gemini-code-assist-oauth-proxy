@@ -35,7 +35,7 @@ To run locally, or to deploy to Cloudflare Workers
 Option 1 (recommended): prebuilt binary via npm (macOS, Linux, Windows)
 
 ```bash
-npm install -g @dvcrn/gemini-code-assist-oauth-proxy
+npm install -g gemini-code-assist-oauth-proxy
 ```
 
 Option 2: install with mise

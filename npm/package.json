@@ -1,5 +1,5 @@
 {
-  "name": "@dvcrn/gemini-code-assist-oauth-proxy",
+  "name": "gemini-code-assist-oauth-proxy",
   "version": "1.0.1",
   "description": "Release package for gemini-code-assist-oauth-proxy",
   "repository": {
