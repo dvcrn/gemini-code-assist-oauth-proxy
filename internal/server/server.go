@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/credentials"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/env"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/gemini"
-	serverhttp "github.com/dvcrn/gemini-code-assist-proxy/internal/http"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/credentials"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/env"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/gemini"
+	serverhttp "github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/http"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 )
 
 // Server represents the proxy server with its dependencies

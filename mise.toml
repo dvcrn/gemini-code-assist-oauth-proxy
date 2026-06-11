@@ -1,11 +1,11 @@
 
 [tasks.build]
 description = "Build the proxy"
-run = "go build -o gemini-code-assist-proxy ./cmd/gemini-code-assist-proxy"
+run = "go build -o gemini-code-assist-oauth-proxy ./cmd/gemini-code-assist-oauth-proxy"
 
 [tasks.run]
 description = "Run the proxy"
-run = "go run ./cmd/gemini-code-assist-proxy"
+run = "go run ./cmd/gemini-code-assist-oauth-proxy"
 
 [tasks.test]
 description = "Run all tests"
@@ -40,7 +40,7 @@ run = [
 description = "Build for Cloudflare Workers"
 run = [
   "go run github.com/syumai/workers/cmd/workers-assets-gen -mode=go",
-  "GOOS=js GOARCH=wasm go build -o ./build/app.wasm cmd/gemini-code-assist-proxy-worker/main.go",
+  "GOOS=js GOARCH=wasm go build -o ./build/app.wasm cmd/gemini-code-assist-oauth-proxy-worker/main.go",
 ]
 
 [tasks."wrangler-dev"]

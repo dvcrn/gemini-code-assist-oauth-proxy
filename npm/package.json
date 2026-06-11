@@ -1,7 +1,7 @@
 {
-  "name": "@dvcrn/gemini-code-assist-proxy",
+  "name": "@dvcrn/gemini-code-assist-oauth-proxy",
   "version": "1.0.0",
-  "description": "Release package for gemini-code-assist-proxy",
+  "description": "Release package for gemini-code-assist-oauth-proxy",
   "scripts": {
     "postinstall": "node postinstall.js"
   },
@@ -9,7 +9,7 @@
     "access": "public"
   },
   "bin": {
-    "gemini-code-assist-proxy": "index.js"
+    "gemini-code-assist-oauth-proxy": "index.js"
   },
   "dependencies": {
     "semver": "^7.7.4"

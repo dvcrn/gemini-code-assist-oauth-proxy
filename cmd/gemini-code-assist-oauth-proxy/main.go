@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/credentials"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/env"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/gemini"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/project"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/server"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/credentials"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/env"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/gemini"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/project"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/server"
 )
 
 func main() {

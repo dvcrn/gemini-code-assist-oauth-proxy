@@ -7,8 +7,8 @@ const crypto = require("crypto");
 const { spawnSync } = require("child_process");
 
 const OWNER = "dvcrn";
-const REPO = "gemini-code-assist-proxy";
-const BIN = "gemini-code-assist-proxy";
+const REPO = "gemini-code-assist-oauth-proxy";
+const BIN = "gemini-code-assist-oauth-proxy";
 const VERSION_ENV = "GEMINI_CODE_ASSIST_PROXY_VERSION";
 const BASE_URL_ENV = "GEMINI_CODE_ASSIST_PROXY_BASE_URL";
 const ARCH_ENV = "GEMINI_CODE_ASSIST_PROXY_ARCH";
@@ -71,7 +71,7 @@ function parseChecksums(text) {
     const platform = platformRaw === "win32" ? "windows" : platformRaw;
     if (!["darwin", "linux", "windows"].includes(platform)) {
       console.error(
-        "gemini-code-assist-proxy: npm install supports macOS (darwin), Linux, and Windows only"
+        "gemini-code-assist-oauth-proxy: npm install supports macOS (darwin), Linux, and Windows only"
       );
       process.exit(1);
     }

@@ -3,7 +3,7 @@ package transform
 import (
 	"testing"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/openai"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/openai"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/gemini"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/gemini"
 )
 
 func TestConvertToGeminiSchema(t *testing.T) {

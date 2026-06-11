@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
 )
 
 // loggingMiddleware logs all incoming requests

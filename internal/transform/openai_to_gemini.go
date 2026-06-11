@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/gemini"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/logger"
-	"github.com/dvcrn/gemini-code-assist-proxy/internal/openai"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/gemini"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/logger"
+	"github.com/dvcrn/gemini-code-assist-oauth-proxy/internal/openai"
 )
 
 // ToGeminiRequest converts an OpenAI chat completion request to a Gemini generateContent request.

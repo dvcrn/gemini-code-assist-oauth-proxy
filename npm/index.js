@@ -5,7 +5,7 @@ const { spawn } = require("child_process");
 
 const { startUpdateCheck } = require("./update_check");
 
-const exe = process.platform === "win32" ? "gemini-code-assist-proxy.exe" : "gemini-code-assist-proxy";
+const exe = process.platform === "win32" ? "gemini-code-assist-oauth-proxy.exe" : "gemini-code-assist-oauth-proxy";
 const binPath = path.join(__dirname, exe);
 
 const PKG = (() => {

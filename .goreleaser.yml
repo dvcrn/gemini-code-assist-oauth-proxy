@@ -1,11 +1,11 @@
 version: 2
 
-project_name: gemini-code-assist-proxy
+project_name: gemini-code-assist-oauth-proxy
 
 builds:
-  - id: gemini-code-assist-proxy
-    main: ./cmd/gemini-code-assist-proxy
-    binary: gemini-code-assist-proxy
+  - id: gemini-code-assist-oauth-proxy
+    main: ./cmd/gemini-code-assist-oauth-proxy
+    binary: gemini-code-assist-oauth-proxy
     env:
       - CGO_ENABLED=0
     goos:
@@ -39,7 +39,7 @@ checksum:
 release:
   github:
     owner: dvcrn
-    name: gemini-code-assist-proxy
+    name: gemini-code-assist-oauth-proxy
   replace_existing_artifacts: true
 
 changelog:
